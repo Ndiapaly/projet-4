@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre de Navigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!--section header-->
+<section class="header">
+<nav class="bg-gray-800 p-1 fixed w-full z-10 top-0">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+        <div class="flex items-center">
+            <a href="#" class="text-white text-xl font-bold">JT2NCoder</a>
+        </div>
+        <div class="block lg:hidden">
+            <button id="menu-button" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+</div>
+<div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
+  <div class="text-sm lg:flex-grow font-serif">
+      <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 hover:text-gray-400 mr-4">
+          ACCUEIL
+      </a>
+      <a href="#services" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
+          PROFIL
+      </a>
+      <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
+          COMPÉTENCES
+      </a><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
+        PROJETS
+    </a>
+
+      <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400">
+          CONTACT
+      </a>
+  </div>
+</div>
+</div>
+</nav>
+
+<script>
+document.getElementById('menu-button').addEventListener('click', function() {
+var menu = document.getElementById('menu');
+if (menu.classList.contains('hidden')) {
+  menu.classList.remove('hidden');
+} else {
+  menu.classList.add('hidden');
+}
+});
+</script>
+</section>
+<!--fin section header-->
+<!--section hero-->
+<main>
+    <section id="hero" class="h-screen bg-cover bg-center text-white"
+             style="background-image: url(https://th.bing.com/th/id/R.223fb467fbef8b8cbc2c84aa64e30e18?rik=PR2C%2bgRuE8KPyA&pid=ImgRaw&r=0);">
+      <div class="h-full flex flex-col justify-center items-center bg-black bg-opacity-50"><br><br>
+        <h2 class="text-4xl text-center md:text-6xl mb-3 font-bold">Salut <br>je suis <font color="bg-indigo-500">Jacob Tidiakh Ndiapaly Ndiaye</font> &nbsp;Developpeur Web&Logiciel</h2><br>
+         <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-5xl">
+          <div class="md:flex">
+           <div class="md:shrink-0 max-w-sm mx-auto mt-8 ml-2 h-48 w-full overflow-auto touch-auto object-cover">
+            <img class=" w-[150%] max-w-none h-auto" src="image/IMG-20240101-WA0012.jpg" alt="Modern building architecture">
+           </div>
+          <div class="p-8">
+            <div class="uppercase tracking-wide lg:text-xl text-slate-400 text-base md:text-lg text-2xl text-indigo-500 font-semibold">À Propos de Moi</div>
+             <p  class="font-medium text-black font-serif mb-10 ">Résumer d"un simple parcourt
+                Hello ! Je m’appelle Jacob Tidiakh Ndiapaly Ndiaye, développeur Web junior devenu Tech Manager.
+                 Auparavant, j’ai effectué plusieurs années en tant que téléconseiller dans l’expertise technique (Canal+ / Orange) ce qui m’a permis d’acquérir de très bonnes compétences telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles importantes.
+                 J’ai profité du retour à mon Alsace natale pour effectuer une reconversion professionnelle dans le Développement Web, domaine qui m’intéressait depuis de nombreuses années.
+                 J’ai donc suivi la formation Développeur Intégrateur au sein.
+             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><br>
+  <!--fin section hero-->
+  <!--section compétence-->
+  <main>
+    <section id="Compétences">
+      <div class="">
+      <h3 class="text-3xl text-center md:text-6xl mb-3 font-bold font-serif font-medium"><font color="bg-indigo-300">compétences</font></h3>
+      <p class="mt-2 text-slate-400 text-3xl text-center ">Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
+     <br><br>
+     <h4 class="text-2xl text-center font-bold">FRONT END
+     <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success rounded-full bg-green-500 mb-3 ml-2" style="width: 25%">Boostrap 25%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-info text-dark rounded-full bg-blue-600 mb-3 ml-2" style="width: 50%">Javascript 50%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-warning text-dark rounded-full bg-yellow-500 mb-3 ml-2" style="width: 75%">CSS 75%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-danger rounded-full bg-red-700 mb-3 ml-1" style="width: 100%">HTML 100%</div>
+    </div>
+  </h4>
+ <br><br>
+     <h4 class="text-3xl text-center font-bold">BACK END
+     <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success rounded-full bg-green-500 mb-3 ml-2" style="width: 25%">PHP 25%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-info rounded-full text-dark bg-blue-600 mb-3 ml-2" style="width: 50%">SQL 50%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-warning rounded-full text-dark bg-yellow-500 mb-3 ml-2" style="width: 75%">Smarty 75%</div>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-danger rounded-full  bg-red-700 mb-3 ml-1" style="width: 100%">Codeigniter 100%</div>
+    </div>
+  </h4>
+      </div>
+    </section>
+  </main><br>
+  <!--fin section compétence-->
+   <!--section projet-->
+   <main>
+    <section id="projet">
+      <div class="">
+        <h5 class="text-4xl text-center font-bold font-serif"><font color="bg-indigo-300">Projet</font></h5>
+        <p class="text-center text-slate-400 text-3xl">Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :</p>
+        <img src="image/R.webp" class=" content-center float-start max-h-80 max-w-90 mb-3 ml-3" alt="...">
+        
+        
+
+      </div>
+
+    </section>
+  </main>
+  <!--fin section projet-->
+<!--section contact-->
+<main>
+    <h1 class="text-center text-3xl font-bold font-serif"><font color="bg-indigo-300">Contactez-moi <br></font>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h1>
+<section id="contact--" class="h-screen bg-cover bg-center text-white"
+style="background-image: url(https://img.lovepik.com/bg/20231223/The-Enigmatic-Beauty-of-the-Eiffel-Tower-at-Night-in_2485700_wh860.png);">
+
+
+  <div class="h-full flex flex-col justify-center items-center bg-black bg-opacity-50 bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800">Contactez-moi</h2>
+        <form action="#" method="POST">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Nom</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Votre nom">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Votre email">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Votre message"></textarea>
+            </div>
+            <div class="flex items-center justify-between">
+                <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 focus:outline-none">Envoyer</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</section>
+</main><br>
+<!--section footer-->
+<main>
+    <section id="footer" class="text-center">
+        <div class="space-y-5 flex justify-center mt-4 space-x-4"><br>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+              </div>
+        </div>
+          <div class="mt-4 text-center text-sm ">
+                &copy; 2024 MonSite. Tous droits réservés.
+              
+    </section>
+</main>
+<!--fin section footer-->
+
+</body>
+</html>
