@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barre de Navigation</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
+ </head>
+ <body class="bg-gray-100">
     <!--section header-->
-<section class="header">
-<nav class="bg-gray-800 p-1 fixed w-full z-10 top-0">
+  <section class="header">
+   <nav class="bg-gray-800 p-1 fixed w-full z-10 top-0">
     <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <div class="flex items-center">
+     <div class="flex items-center">
             <a href="#" class="text-white text-xl font-bold">JT2NCoder</a>
-        </div>
-        <div class="block lg:hidden">
-            <button id="menu-button" class="text-white focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-</div>
-<div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
-  <div class="text-sm lg:flex-grow font-serif">
-      <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 hover:text-gray-400 mr-4">
+     </div>
+     <div class="block lg:hidden">
+       <button id="menu-button" class="text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+       </button>
+     </div>
+      <div class="hidden w-full lg:flex lg:items-center lg:w-auto" id="menu">
+       <div class="text-sm lg:flex-grow font-serif">
+        <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 hover:text-gray-400 mr-4">
           ACCUEIL
-      </a>
-      <a href="#services" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
+        </a>
+        <a href="#services" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
           PROFIL
-      </a>
-      <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
+        </a>
+        <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
           COMPÉTENCES
-      </a><a href="#about" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
+        </a>
+        <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400 mr-4">
         PROJETS
-    </a>
+        </a>
 
-      <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400">
+        <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 border-indigo-500 text-white hover:text-gray-400">
           CONTACT
-      </a>
+        </a>
+   </div>
   </div>
-</div>
-</div>
+ </div>
 </nav>
 
 <script>
@@ -84,28 +85,28 @@ if (menu.classList.contains('hidden')) {
   <main>
     <section id="Compétences">
       <div class="">
-      <h3 class="text-3xl text-center md:text-6xl mb-3 font-bold font-serif font-medium"><font color="bg-indigo-300">compétences</font></h3>
-      <p class="mt-2 text-slate-400 text-3xl text-center ">Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
+       <h3 class="text-3xl text-center md:text-6xl mb-3 font-bold font-serif font-medium"><font color="bg-indigo-300">compétences</font></h3>
+        <p class="mt-2 text-slate-400 text-3xl text-center ">Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
      <br><br>
-     <h4 class="text-2xl text-center font-bold">FRONT END
-     <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-success rounded-full bg-green-500 mb-3 ml-2" style="width: 25%">Boostrap 25%</div>
-    </div>
-    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-info text-dark rounded-full bg-blue-600 mb-3 ml-2" style="width: 50%">Javascript 50%</div>
-    </div>
-    <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-warning text-dark rounded-full bg-yellow-500 mb-3 ml-2" style="width: 75%">CSS 75%</div>
-    </div>
-    <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-danger rounded-full bg-red-700 mb-3 ml-1" style="width: 100%">HTML 100%</div>
-    </div>
-  </h4>
+    <h4 class="text-2xl text-center font-bold">FRONT END
+      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+       <div class="progress-bar bg-success rounded-full bg-green-500 mb-3 ml-2" style="width: 25%">Boostrap 25%</div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+       <div class="progress-bar bg-info text-dark rounded-full bg-blue-600 mb-3 ml-2" style="width: 50%">Javascript 50%</div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+       <div class="progress-bar bg-warning text-dark rounded-full bg-yellow-500 mb-3 ml-2" style="width: 75%">CSS 75%</div>
+      </div>
+      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+       <div class="progress-bar bg-danger rounded-full bg-red-700 mb-3 ml-1" style="width: 100%">HTML 100%</div>
+      </div>
+    </h4>
  <br><br>
-     <h4 class="text-3xl text-center font-bold">BACK END
+    <h4 class="text-3xl text-center font-bold">BACK END
      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
       <div class="progress-bar bg-success rounded-full bg-green-500 mb-3 ml-2" style="width: 25%">PHP 25%</div>
-    </div>
+     </div>
     <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
       <div class="progress-bar bg-info rounded-full text-dark bg-blue-600 mb-3 ml-2" style="width: 50%">SQL 50%</div>
     </div>
@@ -115,7 +116,7 @@ if (menu.classList.contains('hidden')) {
     <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
       <div class="progress-bar bg-danger rounded-full  bg-red-700 mb-3 ml-1" style="width: 100%">Codeigniter 100%</div>
     </div>
-  </h4>
+   </h4>
       </div>
     </section>
   </main><br>
@@ -125,25 +126,18 @@ if (menu.classList.contains('hidden')) {
     <section id="projet">
       <div class="">
         <h5 class="text-4xl text-center font-bold font-serif"><font color="bg-indigo-300">Projet</font></h5>
-        <p class="text-center text-slate-400 text-3xl">Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :</p>
-        <img src="image/R.webp" class=" content-center float-start max-h-80 max-w-90 mb-3 ml-3" alt="...">
-        
-        
-
+         <p class="text-center text-slate-400 text-3xl">Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :</p>
+          <img src="image/R.webp" class=" content-center float-start max-h-80 max-w-90 mb-3 ml-3" alt="...">
       </div>
-
     </section>
   </main>
   <!--fin section projet-->
-<!--section contact-->
-<main>
+  <!--section contact-->
+  <main>
     <h1 class="text-center text-3xl font-bold font-serif"><font color="bg-indigo-300">Contactez-moi <br></font>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h1>
-<section id="contact--" class="h-screen bg-cover bg-center text-white"
-style="background-image: url(https://img.lovepik.com/bg/20231223/The-Enigmatic-Beauty-of-the-Eiffel-Tower-at-Night-in_2485700_wh860.png);">
-
-
+     <section id="contact--" class="h-screen bg-cover bg-center text-white"
+           style="background-image: url(https://img.lovepik.com/bg/20231223/The-Enigmatic-Beauty-of-the-Eiffel-Tower-at-Night-in_2485700_wh860.png);">
   <div class="h-full flex flex-col justify-center items-center bg-black bg-opacity-50 bg-gray-100 flex items-center justify-center min-h-screen">
-
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 class="text-2xl font-bold mb-6 text-gray-800">Contactez-moi</h2>
         <form action="#" method="POST">
@@ -186,8 +180,8 @@ style="background-image: url(https://img.lovepik.com/bg/20231223/The-Enigmatic-B
                 &copy; 2024 MonSite. Tous droits réservés.
               
     </section>
-</main>
-<!--fin section footer-->
+  </main>
+   <!--fin section footer-->
 
-</body>
+ </body>
 </html>
