@@ -67,9 +67,9 @@ if (menu.classList.contains('hidden')) {
            <div class="md:shrink-0 max-w-sm mx-auto mt-8 ml-2 h-48 w-full overflow-auto touch-auto object-cover">
             <img class=" w-[150%] max-w-none h-auto" src="image/IMG-20240101-WA0012.jpg" alt="Modern building architecture">
            </div>
-          <div class="p-8">
-            <div class="uppercase tracking-wide lg:text-xl text-slate-400 text-base md:text-lg text-2xl text-indigo-500 font-semibold">À Propos de Moi</div>
-             <p  class="font-medium text-black font-serif mb-10 ">Résumer d"un simple parcourt
+          <div class="p-0">
+            <div class="uppercase tracking-wide lg:text-2xl text-slate-400 text-base md:text-lg text-2xl text-indigo-500 font-semibold">À Propos de Moi</div>
+             <p  class="font-medium text-black font-serif mb-1 ">Résumer d"un simple parcourt
                 Hello ! Je m’appelle Jacob Tidiakh Ndiapaly Ndiaye, développeur Web junior devenu Tech Manager.
                  Auparavant, j’ai effectué plusieurs années en tant que téléconseiller dans l’expertise technique (Canal+ / Orange) ce qui m’a permis d’acquérir de très bonnes compétences telles que l’organisation, l’écoute, le conseil ainsi que des qualités relationnelles importantes.
                  J’ai profité du retour à mon Alsace natale pour effectuer une reconversion professionnelle dans le Développement Web, domaine qui m’intéressait depuis de nombreuses années.
@@ -79,14 +79,14 @@ if (menu.classList.contains('hidden')) {
         </div>
       </div>
     </section>
-  </main><br>
+  <br>
   <!--fin section hero-->
   <!--section compétence-->
-  <main>
+  
     <section id="Compétences">
-      <div class="">
-       <h3 class="text-3xl text-center md:text-6xl mb-3 font-bold font-serif font-medium"><font color="bg-indigo-300">compétences</font></h3>
-        <p class="mt-2 text-slate-400 text-3xl text-center ">Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
+      <div class="flex-wrap justify-center space-x-4 space-y-4">
+       <h3 class="text-3xl text-center md:text-6xl mb-6 font-bold font-serif"><font color="bg-indigo-300">compétences</font></h3>
+        <p class="mt-2  text-2xl text-center ">Elles sont en constantes améliorations car pour moi la joie de ce métier fait que l’on en apprend tous les jours, d’autant plus en étant impliqué, curieux et passionné.</p>
      <br><br>
     <h4 class="text-2xl text-center font-bold">FRONT END
       <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -99,7 +99,7 @@ if (menu.classList.contains('hidden')) {
        <div class="progress-bar bg-warning text-dark rounded-full bg-yellow-500 mb-3 ml-2" style="width: 75%">CSS 75%</div>
       </div>
       <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-       <div class="progress-bar bg-danger rounded-full bg-red-700 mb-3 ml-1" style="width: 100%">HTML 100%</div>
+       <div class="progress-bar bg-danger rounded-full bg-red-700 mb-3 ml-1" style="width: 98%">HTML 100%</div>
       </div>
     </h4>
  <br><br>
@@ -114,26 +114,67 @@ if (menu.classList.contains('hidden')) {
       <div class="progress-bar bg-warning rounded-full text-dark bg-yellow-500 mb-3 ml-2" style="width: 75%">Smarty 75%</div>
     </div>
     <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-      <div class="progress-bar bg-danger rounded-full  bg-red-700 mb-3 ml-1" style="width: 100%">Codeigniter 100%</div>
+      <div class="progress-bar bg-danger rounded-full  bg-red-700 mb-3 ml-1" style="width: 98%">Codeigniter 100%</div>
     </div>
    </h4>
       </div>
     </section>
-  </main><br>
+  <br>
   <!--fin section compétence-->
    <!--section projet-->
-   <main>
-    <section id="projet">
-      <div class="">
-        <h5 class="text-4xl text-center font-bold font-serif"><font color="bg-indigo-300">Projet</font></h5>
-         <p class="text-center text-slate-400 text-3xl">Ci-dessous, quelques exemples de réalisations effectuées durant la formation, le stage et plus encore :</p>
-          <img src="image/R.webp" class=" content-center float-start max-h-80 max-w-90 mb-3 ml-3" alt="...">
-      </div>
-    </section>
-  </main>
-  <!--fin section projet-->
+   
+    <section id="Projects" class="p-8 bg-gray-200">
+    <h2 class="text-3xl mb-6 text-center font-bold">Mes Projets</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Projects Cards -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="image/eBusiness-bootstrap-theme-site-internet.png" alt="ebusiness" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Ebusiness</h3>
+                <p class="mt-2">Un simple site de Ebusiness avec Boostrap</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="image/Site-de-courtage-en-ligne-Empire-Flippers.webp" alt="Site de courtage en ligne" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Site de courtage en ligne</h3>
+                <p class="mt-2">Un simple site de courtage </p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="image/site-internet-350-euro-comila-theme.jpg" alt="site internet" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Site internet</h3>
+                <p class="mt-2">Un simple site internet</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="image/site-internet-350-euro-flat-theme-glissiere.jpg" alt="site internet" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">E-commerce site</h3>
+                <p class="mt-2">Un  site E-Commerce creer avec MERN Technology</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="image/site-internet-350-euro-outline-theme-glissiere.jpg" alt="outline" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Site outline</h3>
+                <p class="mt-2">Outline site creer avec Boostrap</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="image/site-internet-350-euros-infinite-theme5.jpg" alt="site-internet" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold">Site internet 350 euro</h3>
+                <p class="mt-2">Un site creer dans le cadre d'un travail de groupe</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!--fin section projet-->
   <!--section contact-->
-  <main>
+  
     <h1 class="text-center text-3xl font-bold font-serif"><font color="bg-indigo-300">Contactez-moi <br></font>N'hésitez pas à me contacter, je vous répondrai dans les plus brefs délais.</h1>
      <section id="contact--" class="h-screen bg-cover bg-center text-white"
            style="background-image: url(https://img.lovepik.com/bg/20231223/The-Enigmatic-Beauty-of-the-Eiffel-Tower-at-Night-in_2485700_wh860.png);">
@@ -160,9 +201,9 @@ if (menu.classList.contains('hidden')) {
     </div>
   </div>
 </section>
-</main><br>
+<br>
 <!--section footer-->
-<main>
+
     <section id="footer" class="text-center">
         <div class="space-y-5 flex justify-center mt-4 space-x-4"><br>
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -180,8 +221,8 @@ if (menu.classList.contains('hidden')) {
                 &copy; 2024 MonSite. Tous droits réservés.
               
     </section>
-  </main>
+  
    <!--fin section footer-->
-
+  </main>
  </body>
 </html>
